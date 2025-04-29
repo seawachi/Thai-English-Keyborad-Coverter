@@ -1,0 +1,33 @@
+{
+  "icons": {
+    "16": "logo.png",
+    "32": "logo.png",
+    "48": "logo.png",
+    "128": "logo.png"
+  },
+  "manifest_version": 3,
+  "name": "Thai-English Keyboard Converter",
+  "version": "1.0",
+  "description": "Right-click to convert Thai text to English (or vice versa) using keyboard mapping.",
+  "permissions": [
+    "contextMenus",
+    "activeTab",
+    "scripting",
+    "clipboardWrite"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Thai ⇄ English Converter",
+    "default_icon": {
+      "16": "logo.png",
+      "32": "logo.png"
+    }
+  }
+}
