@@ -25,11 +25,12 @@ A simple Chrome extension that converts mistyped Thai-English text when the wron
 ## 📷 Screenshots
 
 ### Main Popup UI  
-<img width="384" alt="image" src="https://github.com/user-attachments/assets/6c0c791a-76e6-4dce-a6b5-e4670c83c54f" />
+<img width="361" alt="image" src="https://github.com/user-attachments/assets/bc6c8522-6f90-42e3-a5d6-77cf0a62fc6f" />
 
 
 ### Example Conversion  
-<img width="399" alt="image" src="https://github.com/user-attachments/assets/8ea0aa67-cf50-43f0-b810-a94e421c1567" />
+<img width="363" alt="image" src="https://github.com/user-attachments/assets/cfc3be4b-9747-4e19-9066-3b7cfeea384b" />
+
 
 
 ## 📁 File Structure
