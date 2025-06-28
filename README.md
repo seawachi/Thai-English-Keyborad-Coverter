@@ -32,15 +32,6 @@ A simple Chrome extension that converts mistyped Thai-English text when the wron
 <img width="363" alt="image" src="https://github.com/user-attachments/assets/cfc3be4b-9747-4e19-9066-3b7cfeea384b" />
 
 
-
-## 📁 File Structure
-
-- `popup.html` – The popup interface.
-- `popup.js` – Handles UI interaction.
-- `background.js` – Handles background tasks.
-- `keyMapping.js` – Maps keys between Thai and English layouts.
-- `manifest.json` – Chrome extension configuration.
-
 ## 📄 License
 
 This project is create **By seawachi** free to use and not allowd to use in comercial.
