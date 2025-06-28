@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Thai ⇄ English Converter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    :root {
+      --color-bg: #ffffff00;
+      --color-card: #f9f9f9;
+      --color-text: #1e1e1e;
+      --color-accent: #1a73e8;
+      --color-output: #eef1f5;
+      --input-bg: #f1f1f1;
+      --input-color: #1e1e1e;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --color-bg: #1e1e1e;
+        --color-card: #2c2c2c;
+        --color-text: #eeeeee;
+        --color-accent: #3391ff;
+        --color-output: #3a3a3a;
+        --input-bg: #2d2d2d;
+        --input-color: #eeeeee;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      padding: 20px;
+      width: 360px;
+      background: var(--color-bg);
+      color: var(--color-text);
+    }
+
+    .card {
+      background: var(--color-card);
+      border-radius: 18px;
+      padding: 20px;
+      margin-top: 15px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 18px;
+      color: var(--color-accent);
+    }
+
+    textarea {
+      padding: 12px;
+      font-size: 14px;
+      border-radius: 12px;
+      border: 1px solid #ccc;
+      resize: none;
+      background: var(--input-bg);
+      color: var(--input-color);
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    button {
+      background: var(--color-accent);
+      color: #fff;
+      border: none;
+      border-radius: 12px;
+      padding: 12px;
+      font-size: 15px;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.1s;
+    }
+
+    button:hover {
+      background: #155fc2;
+    }
+
+    button:active {
+      transform: scale(0.98);
+    }
+
+    #output {
+      background: var(--color-output);
+      padding: 10px;
+      border-radius: 10px;
+      min-height: 40px;
+      font-size: 14px;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      color: var(--color-text);
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 14px;
+      color: #888;
+      margin-top: 10px;
+    }
+
+    .rainbow {
+      background: linear-gradient(90deg, red, orange, green, cyan, blue, violet);
+      background-size: 400% 100%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: rainbowText 30s linear infinite;
+    }
+
+    @keyframes rainbowText {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 400% 50%; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Thai-English Keyboard Converter</h1>
+  <div class="card">
+    <textarea id="inputText" placeholder="Type or paste text here..."></textarea>
+    <button id="convertBtn">Convert & Copy</button>
+    <div id="output">Waiting for input...</div>
+  </div>
+    <div class="footer">© 2025 by <span class="rainbow">seawachi</span></div>
+  <script defer src="popup.js"></script>
+</body>
+</html>
