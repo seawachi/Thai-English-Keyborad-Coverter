@@ -1,12 +1,45 @@
-## 🔄 สามารถแปลงจาก UI ได้เลย
+# 🛠 Thai-English Keyboard Converter (Chrome Extension)
 
-- เลือกคำที่ผิด
-- จากนั้นกด "แปลง" ได้เลย
+A simple Chrome extension that converts mistyped Thai-English text when the wrong keyboard language was used.
 
-## 📷 ตัวอย่างหน้าจอ
+## ✨ Features
 
-### 1. หน้าจอหลัก  
-![image](https://github.com/user-attachments/assets/9c088869-c91d-4a14-ba3e-3c42091fe4ed)
+- Detects and converts selected text from Thai ⇄ English keyboard layout.
+- Lightweight and easy to use from a popup.
+- Ideal for quickly fixing mistyped text without switching keyboards manually.
 
-### 2. ตัวอย่างเมื่อเลือกคำที่ผิด  
-![image](https://github.com/user-attachments/assets/d09fa106-a9b6-4824-b8a5-9b7842b7ce21)
+## 📦 Installation
+
+1. Clone or download this repository.
+2. Open Google Chrome and go to: `chrome://extensions/`
+3. Enable **Developer mode** (top right).
+4. Click **Load unpacked** and select the `Thai-English-Keyborad-Coverter-main` folder.
+
+## 🚀 How to Use
+
+1. Highlight the mistyped text on a webpage.
+2. Click on the extension icon.
+3. Click the **"แปลง"** (Convert) button in the popup.
+4. The corrected version of the text will be displayed.
+
+## 📷 Screenshots
+
+### Main Popup UI  
+<img width="384" alt="image" src="https://github.com/user-attachments/assets/6c0c791a-76e6-4dce-a6b5-e4670c83c54f" />
+
+
+### Example Conversion  
+<img width="399" alt="image" src="https://github.com/user-attachments/assets/8ea0aa67-cf50-43f0-b810-a94e421c1567" />
+
+
+## 📁 File Structure
+
+- `popup.html` – The popup interface.
+- `popup.js` – Handles UI interaction.
+- `background.js` – Handles background tasks.
+- `keyMapping.js` – Maps keys between Thai and English layouts.
+- `manifest.json` – Chrome extension configuration.
+
+## 📄 License
+
+This project is create **By seawachi** free to use and not allowd to use in comercial.
